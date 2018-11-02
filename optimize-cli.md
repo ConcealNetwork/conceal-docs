@@ -34,7 +34,7 @@ Then you will see that the number of outputs have reduced:
 [wallet ccx7Pz]: optimize_all
 Total outputs: 396
 Total optimization rounds: 3
-``
+```
 
 **Always use the latest version of concealwallet**
 
