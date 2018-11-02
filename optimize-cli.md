@@ -28,7 +28,7 @@ Then you will see that the number of outputs have reduced:
 136
 ```
 
-- **optimize_all** - When you want to send on large transactions, that involves all or almost all of the funds in your wallet, then you can run this command. The command runs several optimization rounds at once.
+- **optimize_all** - When you have thousands of ouputs or want to send one large transaction, that involves all or almost all of the funds in your wallet, then you can run this command. The command runs several optimization rounds at once.
 
 ### Important Notes
 
