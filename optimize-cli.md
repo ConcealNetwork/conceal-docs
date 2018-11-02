@@ -1,12 +1,12 @@
 ## Optimize your wallet
 
-Depending on how much CCX you want to transfer, you might run into the error **Transaction size is too big, please optimize your wallet** or **Transaction is too big**. Often, this is because of a lot of small incoming transactions. With the command line **concealwallet**, you can optimize your wallet to send larger transactions, or a single big transaction.
+Depending on how much CCX you want to transfer, you might run into the error **Transaction size is too big, please optimize your wallet** or **Transaction is too big**. Often, this is because of a lot of small incoming transactions. With the command line **concealwallet**, you can optimize your wallet to send larger transactions, or a single big transaction. Like any other transaction on the network, you will need to wait for confirmation of the optimization transactions to spend those funds.
 
 ### Optimizing
 
 The process of optimizing your wallet takes all your small incoming transactions and combines them into bigger ones by sending them to yourself. It is akin to replacing a handful of small currency bills with a single larger one. Once the process is complete you will be able to send larger transactions. There are three commands that help you optimize your wallet:
 
-- **outputs** - This command shows your the total number of outputs in your wallet. The more outputs in your wallet, the more optimization your wallet will need to send large transactions.
+- **outputs** - This command shows your the total number of outputs in your wallet. The more outputs in your wallet, the more optimization your wallet will need to send large transactions. If you have less than 100 outputs, then you do not need to optimize your wallet.
 
 ```
 [wallet ccx7Pz]: outputs
@@ -28,13 +28,14 @@ Then you will see that the number of outputs have reduced:
 136
 ```
 
-- **optimize_all** - When you have thousands of ouputs or want to send one large transaction, that involves all or almost all of the funds in your wallet, then you can run this command. The command runs several optimization rounds at once.
+- **optimize_all** - When you have thousands of ouputs or want to send one large transaction, that involves all or almost all of the funds in your wallet, then you can run this command. The command runs several optimization rounds at once. You will see the number of outputs and the number of optimization rounds that the process will run. Some wallets, with several thousand outputs will need several rounds of **optimize_all**. It depends on how much you want to send and how many outputs you have.
 
-### Important Notes
+```
+[wallet ccx7Pz]: optimize_all
+Total outputs: 396
+Total optimization rounds: 3
+``
 
-- Some wallets, with several thousand outputs will need several rounds of **optimize_all**. It depends on how much you want to send and how many outputs you have.
-- If you have less than 100 outputs, then you do not need to optimize your wallet.
-- Use the latest version of **concealwallet**
-- Like any other transaction on the network, you will need to wait for confirmation of the optimization transactions to spend those funds.
+# Use the latest version of **concealwallet**
 
 
