@@ -20,7 +20,8 @@ The process of optimizing your wallet takes all your small incoming transactions
 [wallet ccx7Pz]: optimize
 Money successfully sent, transaction c273bb88f7957c3bc25f79ff2494a30ffa226d3a06c95f3ba49eb4b6dc334e97
 Transaction secret key 02464c66f23f077e9bd859e5aec87d2b8802f4f6871e860ee212398e8782cf0d
-``
+```
+
 Then you will see that the number of outputs have reduced:
 
 ```
