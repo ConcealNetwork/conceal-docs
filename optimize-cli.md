@@ -36,6 +36,6 @@ Total outputs: 396
 Total optimization rounds: 3
 ``
 
-# Use the latest version of **concealwallet**
+**Always use the latest version of concealwallet**
 
 
