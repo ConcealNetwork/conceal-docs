@@ -34,6 +34,7 @@ Then you will see that the number of outputs have reduced:
 
 - Some wallets, with several thousand outputs will need several rounds of **optimize_all**. It depends on how much you want to send and how many outputs you have.
 - If you have less than 100 outputs, then you do not need to optimize your wallet.
-- 
+- Use the latest version of **concealwallet**
+- Like any other transaction on the network, you will need to wait for confirmation of the optimization transactions to spend those funds.
 
 
